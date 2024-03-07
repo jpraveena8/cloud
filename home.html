@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Hospital Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: white;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    
+    .header .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    .header .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    
+    .header .logo span {
+      font-family: Arial;
+      font-weight: bold;
+      color: #2554C7;
+      font-size: medium;
+    }
+    
+    .header ul {
+      list-style: none;
+      display: flex;
+    }
+    
+    .header ul li {
+      margin-right: 30px;
+    }
+    
+    .header ul li a {
+      font-family: Arial;
+      text-decoration: none;
+      color: #2554C7;
+      font-weight: bold;
+      font-size: medium;
+    }
+    
+    .header .logo {
+      order: 1;
+    }
+    
+    .header ul {
+      order: 2;
+    }
+    
+    .banner .box-container {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+    }
+
+    .banner .box {
+      font-family: Arial;
+      font-size: small;
+      width: 30%;
+      background-color: #2554C7;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: justify;
+      margin-right: 20px;
+    }
+    
+    .banner .box:last-child {
+      margin-right: 0;
+    }
+    
+    .banner .box h2 {
+      font-family: Arial;
+      color: white;
+      font-weight: bold;
+    }
+    
+    .banner {
+      background-image: url("b1.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+    }
+    
+    .banner h1 {
+      font-family: Arial;
+      color: white;
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 5px;
+      line-height: 1;
+    }
+    
+    .banner p {
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .banner .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2554C7;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    /* New CSS styles for footer */
+    .footer {
+      background-color: #2554C7;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-family: Arial;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 90px;
+    }
+  
+    .footer-col {
+      width: 33.33%;
+      padding: 0 15px;
+      text-align: left;
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .footer-col .social-links a {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin-right: 10px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #fff;
+      transition: all 0.5s ease;
+    }
+
+    .footer-col .social-links a:hover {
+      background-color: #fff;
+      color: #333;
+    }
+
+    .social-links img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+    
+    /* Additional styles for spacing within the footer columns */
+    .footer-col ul li {
+      margin-bottom: 5px; /* Adjust the margin as desired */
+    }
+
+    .footer-col p {
+      margin-bottom: 10px; /* Adjust the margin as desired */
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="p1.png" alt="Hospital Logo">
+      <span>ABC</span>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+       <li><a href="register.html">Register</a></li>
+      <li><a href="app.html">Appointment</a></li>
+      <li><a href="cont.html">Contact Us</a></li>
+      <li><a href="ser1.html">Services</a></li>
+      <li><a href="prof.html">Doctors</a></li>
+      <li><a href="index2.html">Record</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  
+  <div class="banner">
+    <h1>Your Good Health is</h1>
+    <h1>Our Responsibility</h1>
+    <p style="color: white;">Get your appointment through online and remain safe at your home.</p>
+    <a href="app.html" class="btn">Book Appointment</a>
+    <div class="box-container">
+      <div class="box">
+        <h2>EMERGENCY - CONTACT NO</h2>
+        <p>For any emergency situations, please contact our helpline at <strong>+1-123-456-7890</strong>.</p>
+      </div>
+      <div class="box">
+        <h2>SAFETY AND QUALITY</h2>
+        <p>We prioritize safety and maintain high-quality standards in all our services to ensure the well-being of our patients.</p>
+      </div>
+      <div class="box">
+        <h2>RESULT BY ONLINE</h2>
+        <p>Access your test results conveniently through our online portal. Stay updated with your medical reports from the comfort of your home.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Rest of your webpage content goes here -->
+  <div class="footer">
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Specialists</h4>
+      <ul>
+        <li><a href="#">Ophthalmologists</a></li>
+        <li><a href="#">Gynecologists</a></li>
+        <li><a href="#">Neurologists</a></li>
+        <li><a href="#">Nephrologists</a></li>
+        <li><a href="#">Nephrologists</a></li>
+        <li><a href="#">Oncologists</a></li>
+        <li><a href="#">Psychiatrists</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><img src="fb.png" alt="Facebook"></a>
+        <a href="#"><img src="tw.jpg" alt="Twitter"></a>
+        <a href="#"><img src="in.jpg" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
